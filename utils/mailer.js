@@ -27,6 +27,7 @@ export default async (body) => {
           reject(err);
         } else {
           resolve(info);
+          console.log("sent");
         }
       }
     );
