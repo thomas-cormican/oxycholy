@@ -11,12 +11,24 @@ export default async (body) => {
     },
   });
 
-  let info = await transporter.sendMail({
-    from: `${body.name} <thomascormican@zohomail.eu>`, // sender address
-    to: "thomascormican@zohomail.eu", // list of receivers
-    subject: "Message", // Subject line
-    text:
-      body.message +
-      `\n email: ${body.email} \n phone: ${body.phone} \n phone number: ${body.message}`, // plain text body
-  });
+  await new Promise(
+    (resolve, reject) => {
+      transporter.sendMail({
+        from: `${body.name} <thomascormican@zohomail.eu>`, // sender address
+        to: "thomascormican@zohomail.eu", // list of receivers
+        subject: "Message", // Subject line
+        text:
+          body.message +
+          `\n email: ${body.email} \n phone: ${body.phone} \n phone number: ${body.message}`, // plain text body
+      });
+    },
+    (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        resolve(info);
+      }
+    }
+  );
 };
