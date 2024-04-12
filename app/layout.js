@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
+
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,9 +12,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" href="/icon.ico" sizes="any" />
+      </Head>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
