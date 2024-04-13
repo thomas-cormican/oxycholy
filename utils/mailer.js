@@ -25,9 +25,11 @@ export default async (body) => {
         if (err) {
           console.error(err);
           reject(err);
+          return "Error";
         } else {
           resolve(info);
           console.log("sent");
+          return "Ok";
         }
       }
     );
