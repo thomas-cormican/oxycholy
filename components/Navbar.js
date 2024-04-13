@@ -26,13 +26,13 @@ function Navbar() {
         <Image
           src="/Icon_dark.png"
           alt="Vercel Logo"
-          className="dark:invert"
+          className="invert"
           width={100}
           height={24}
           priority
         />
       </a>
-      <div className="flex w-full items-center justify-end bg-gradient-to-t sm:text-[16px]">
+      <div className="flex w-full items-center justify-end bg-gradient-to-t sm:text-[16px] text-white">
         <a
           className="cursor-pointer"
           onClick={() => scrollToAbout()}

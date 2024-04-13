@@ -5,12 +5,21 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-white dark:bg-black flex-col items-center text-black dark:text-white justify-between text-lg">
-      <div className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,grey_1px,transparent_1px),linear-gradient(to_bottom,grey_1px,transparent_1px)] bg-[size:40px_40px] opacity-15"></div>
-      <div className="flex flex-col justify-between items-center h-screen md:h-[unset] max-w-7xl w-full p-12 sm:p-4">
+    <main className="flex min-h-screen bg-black dark:bg-black flex-col items-center text-black dark:text-white justify-between text-lg">
+      <div className="flex flex-col justify-between items-center min-h-screen md:min-h-[unset] max-w-7xl w-full p-12 sm:p-4">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 w-auto  
+            min-w-full min-h-full opacity-45 object-cover"
+        >
+          <source src="/bg-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <Navbar />
-        <div className="flex bg-indigo-200/40 dark:bg-gradient-to-r from-[#bb1c4b] to-purple-900 rounded-md flex-auto my-16">
-          <div className="relative flex md:flex-col place-items-center justify-center my-1 dar:backdrop-blur-sm bg-transparent dark:bg-gray-900/80">
+        <div className="z-10 flex dark:bg-gradient-to-r from-[#bb1c4b] to-purple-900 rounded-md flex-auto my-16">
+          <div className="relative flex md:flex-col place-items-center justify-center my-1 dar:backdrop-blur-sm bg-white/80 dark:bg-gray-900/80">
             <div className="basis-1/2">
               <Logo width={500} />
             </div>
@@ -25,7 +34,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <ArrowDown />
+        <div className="z-10">
+          <ArrowDown />
+        </div>
       </div>
       <div
         id="about"
@@ -113,7 +124,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </div>
-      <footer className="w-full p-4 border-t-[1px] border-t-gray-500 text-center">
+      <footer className="w-full p-4 border-t-[1px] bg-white dark:bg-black border-t-gray-500 text-center">
         <Logo width={400} />
         <p className="text-sm text-gray-500">
           <a href="https://www.privacypolicies.com/live/8c48d388-85e9-4f33-9e2c-8f8701a286e2">

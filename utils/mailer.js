@@ -16,7 +16,7 @@ export default async (body) => {
       {
         from: `${body.name} <thomascormican@zohomail.eu>`, // sender address
         to: "thomascormican@zohomail.eu", // list of receivers
-        subject: "Message", // Subject line
+        subject: "Oxycholy Form", // Subject line
         text:
           body.message +
           `\n email: ${body.email} \n phone: ${body.phone} \n message: ${body.message}`, // plain text body
