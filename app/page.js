@@ -116,6 +116,11 @@ export default function Home() {
       <footer className="w-full p-4 border-t-[1px] border-t-gray-500 text-center">
         <Logo width={400} />
         <p className="text-sm text-gray-500">
+          <a href="https://www.privacypolicies.com/live/8c48d388-85e9-4f33-9e2c-8f8701a286e2">
+            Our Privacy Policy
+          </a>
+        </p>
+        <p className="text-sm text-gray-500">
           Oxycholy - @2024 All Rights Reserved
         </p>
       </footer>

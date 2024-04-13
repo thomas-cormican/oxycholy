@@ -6,7 +6,9 @@ export async function POST(request) {
   console.log(name, email, phone, message);
   try {
     const response = await mailer({ name, email, phone, message });
-    return NextResponse.json({ message: "Hello from API!" });
+    return NextResponse.json({
+      message: "Email sent",
+    });
   } catch (err) {
     return NextResponse.json({ message: err });
   }

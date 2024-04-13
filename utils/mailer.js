@@ -19,7 +19,7 @@ export default async (body) => {
         subject: "Message", // Subject line
         text:
           body.message +
-          `\n email: ${body.email} \n phone: ${body.phone} \n phone number: ${body.message}`, // plain text body
+          `\n email: ${body.email} \n phone: ${body.phone} \n message: ${body.message}`, // plain text body
       },
       (err, info) => {
         if (err) {

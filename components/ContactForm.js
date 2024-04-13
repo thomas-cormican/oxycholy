@@ -9,9 +9,13 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    sendEmail({ name, email, phone, message });
+    await sendEmail({ name, email, phone, message });
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
   };
 
   return (
