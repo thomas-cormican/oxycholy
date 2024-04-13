@@ -38,12 +38,12 @@ export default function Home() {
               Who Are <span className="text-[#db3969]">We</span>
             </h2>
             <p className="text-center">
-              We're a Chiswick-based agency that helps home improvement
-              companies by delivering top-tier, quote-ready leads through
-              strategic advertising on popular social media sites. Our targeted
-              approach not only frees you up to concentrate on your work, but
-              also ensures your growth is driven by genuinely interested
-              clients, making your business growth smooth and efficient.
+              We're a Hull-based agency that helps promising businesses with
+              top-tier, quote-ready leads through strategic advertising on
+              popular social media sites. Our targeted approach doesn't only
+              free you up to concentrate on your work, but also ensures that
+              your growth is driven by genuinely interested clients, making your
+              business growth smooth and efficient.
             </p>
           </div>
           <div className="flex flex-col items-center max-w-5xl w-full m-auto">
