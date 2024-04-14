@@ -6,36 +6,39 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <main className="flex bg-black flex-col items-center text-white justify-between text-lg ">
-      <div className="flex flex-col relative justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
+      <div className="flex flex-col relative justify-between items-center w-full">
         <video
           autoPlay
           loop
           muted
           className="absolute top-0  
-            min-w-full min-h-full h-full opacity-45 object-cover"
+            min-w-full w-full min-h-full h-full opacity-45 object-cover"
         >
           <source src="/bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <Navbar />
-        <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b] md:flex-none to-purple-900 rounded-md flex-auto my-16">
-          <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/80">
-            <div className="basis-1/2">
-              <Logo width={500} />
-            </div>
-            <div className="basis-1/2">
-              <h2 className="text-2xl pr-16 md:p-4 text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px] md:pb-[30px]">
-                We help businesses with{" "}
-                <span className="text-[#db3969]">hassle-free</span> lead
-                generation, allowing you to focus on what's{" "}
-                <span className="text-[#db3969]">important</span> in your craft.{" "}
-                <span className="text-[#db3969]">No leads, no payment.</span>
-              </h2>
+        <div className="flex flex-col relative justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
+          <Navbar />
+          <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b] md:flex-none to-purple-900 rounded-md flex-auto my-16">
+            <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/80">
+              <div className="basis-1/2">
+                <Logo width={500} />
+              </div>
+              <div className="basis-1/2">
+                <h2 className="text-2xl pr-16 md:p-4 text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px] md:pb-[30px]">
+                  We help businesses with{" "}
+                  <span className="text-[#db3969]">hassle-free</span> lead
+                  generation, allowing you to focus on what's{" "}
+                  <span className="text-[#db3969]">important</span> in your
+                  craft.{" "}
+                  <span className="text-[#db3969]">No leads, no payment.</span>
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="z-10">
-          <ArrowDown />
+          <div className="z-10">
+            <ArrowDown />
+          </div>
         </div>
       </div>
       <div
