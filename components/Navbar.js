@@ -49,9 +49,6 @@ function Navbar() {
         >
           Contact
         </a>
-        <div className="ml-4 sm:ml-2">
-          <ModeButton />
-        </div>
       </div>
     </div>
   );

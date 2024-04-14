@@ -5,26 +5,26 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-black dark:bg-black flex-col items-center text-black dark:text-white justify-between text-lg">
-      <div className="flex flex-col justify-between items-center min-h-screen md:min-h-[unset] max-w-7xl w-full p-12 sm:p-4">
+    <main className="flex bg-black flex-col items-center text-white justify-between text-lg ">
+      <div className="flex flex-col justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
         <video
           autoPlay
           loop
           muted
-          className="absolute top-0 w-auto  
-            min-w-full min-h-full opacity-45 object-cover"
+          className="absolute top-0  
+            min-w-full min-h-full h-full opacity-45 object-cover"
         >
           <source src="/bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <Navbar />
-        <div className="z-10 flex dark:bg-gradient-to-r from-[#bb1c4b] to-purple-900 rounded-md flex-auto my-16">
-          <div className="relative flex md:flex-col place-items-center justify-center my-1 dar:backdrop-blur-sm bg-white/80 dark:bg-gray-900/80">
+        <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b] md:flex-none to-purple-900 rounded-md flex-auto my-16">
+          <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/80">
             <div className="basis-1/2">
               <Logo width={500} />
             </div>
             <div className="basis-1/2">
-              <h2 className="text-2xl pr-16 md:p-4 text-black dark:text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px]">
+              <h2 className="text-2xl pr-16 md:p-4 text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px] md:pb-[30px]">
                 We help businesses with{" "}
                 <span className="text-[#db3969]">hassle-free</span> lead
                 generation, allowing you to focus on what's{" "}
@@ -118,13 +118,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="contact" className="w-full bg-slate-700 dark:bg-black">
+      <div id="contact" className="w-full bg-slate-700">
         <div className="flex flex-col items-center max-w-5xl w-full px-12 py-16 m-auto sm:px-4">
           <h2 className="text-5xl mb-8 text-white sm:text-4xl">Contact Us</h2>
           <ContactForm />
         </div>
       </div>
-      <footer className="w-full p-4 border-t-[1px] bg-white dark:bg-black border-t-gray-500 text-center">
+      <footer className="w-full p-4 border-t-[1px] bg-black border-t-gray-500 text-center">
         <Logo width={400} />
         <p className="text-sm text-gray-500">
           <a href="https://www.privacypolicies.com/live/8c48d388-85e9-4f33-9e2c-8f8701a286e2">
