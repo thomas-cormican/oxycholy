@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <main className="flex bg-black flex-col items-center text-white justify-between text-lg ">
-      <div className="flex flex-col justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
+      <div className="flex flex-col relative justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
         <video
           autoPlay
           loop
