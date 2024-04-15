@@ -8,7 +8,7 @@ const Logo = ({ width }) => {
     <Image
       className="relative m-auto"
       src="/Logo_light.png"
-      alt="Next.js Logo"
+      alt="Oxycholy Logo"
       width={width}
       height={37}
       priority
