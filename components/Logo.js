@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
+import React from "react";
 import Image from "next/image";
 
 const Logo = ({ width }) => {

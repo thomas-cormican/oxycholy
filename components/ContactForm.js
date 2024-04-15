@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { sendEmail } from "@/utils/sendEmail";
 
 const ContactForm = () => {
+  const [submitting, setSubmitting] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -11,7 +12,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
     await sendEmail({ name, email, phone, message });
+    setSubmitting(false);
     setName("");
     setEmail("");
     setPhone("");
@@ -31,6 +34,7 @@ const ContactForm = () => {
         onChange={(e) => {
           setName(e.target.value);
         }}
+        disabled={submitting}
       />
       <input
         className="w-full bg-neutral-200  mb-4 p-2 rounded-md"
@@ -40,6 +44,7 @@ const ContactForm = () => {
         onChange={(e) => {
           setEmail(e.target.value);
         }}
+        disabled={submitting}
       />
       <input
         className="w-full bg-neutral-200  mb-4 p-2 rounded-md"
@@ -49,6 +54,7 @@ const ContactForm = () => {
         onChange={(e) => {
           setPhone(e.target.value);
         }}
+        disabled={submitting}
       />
       <textarea
         className="w-full bg-neutral-200  mb-4 p-2 rounded-md"
@@ -58,10 +64,12 @@ const ContactForm = () => {
         onChange={(e) => {
           setMessage(e.target.value);
         }}
+        disabled={submitting}
       />
       <button
         type="submit"
         className="w-[100px] text-white bg-gradient-to-br from-[#bb1c4b] to-[#630F28] rounded-sm p-2"
+        disabled={submitting}
       >
         Submit
       </button>

@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
-
-import ModeButton from "./ModeButton";
 
 function Navbar() {
   const scrollToAbout = () => {
@@ -19,13 +17,13 @@ function Navbar() {
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-md flex px-8 sm:px-0">
       <a
         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        href="https://www.oxycholy.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Image
           src="/Icon_dark.png"
-          alt="Vercel Logo"
+          alt="Oxycholy Logo"
           className="invert"
           width={100}
           height={24}

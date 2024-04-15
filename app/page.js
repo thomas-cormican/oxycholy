@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import ArrowDown from "@/components/ArrowDown";
 import Logo from "@/components/Logo";
 import ContactForm from "@/components/ContactForm";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
         id="about"
         className="relative text-white w-full py-28 z-10 bg-slate-900"
       >
-        <div class="absolute inset-0 h-full w-full bg-[url(/pexels-fauxels.jpg)] opacity-30 bg-cover -z-10"></div>
+        <div className="absolute inset-0 h-full w-full bg-[url(/pexels-fauxels.jpg)] opacity-30 bg-cover -z-10"></div>
         <div className="bg-gray-600/70 backdrop-blur-md rounded-md max-w-5xl w-full px-12 py-8 sm:px-4 m-auto">
           <div className="flex flex-col items-center max-w-5xl w-full mb-16">
             <h2 className="text-5xl mb-8 sm:text-4xl">
@@ -66,56 +67,26 @@ export default function Home() {
             </h2>
             <div className="flex md:flex-col w-full justify-between">
               <div className="basis-[30%] md:mb-8">
-                <div className="flex">
-                  <div>
-                    <span className="flex w-[50px] h-[50px] justify-center items-center text-center rounded-full bg-blue-500">
-                      <span className="text-2xl">1</span>
-                    </span>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-2xl font-bold">Gather Content</h4>
-                    <p className="text-[16px]">
-                      In the initial step, we collect visuals that highlight
-                      your craftsmanship. These form the foundation of our
-                      strategy, serving to attract a greater number of potential
-                      clients to your business.
-                    </p>
-                  </div>
-                </div>
+                <Card heading="Gather Content" number={1}>
+                  In the initial step, we collect visuals that highlight your
+                  craftsmanship. These form the foundation of our strategy,
+                  serving to attract a greater number of potential clients to
+                  your business.
+                </Card>
               </div>
               <div className="basis-[30%] md:mb-8">
-                <div className="flex">
-                  <div>
-                    <span className="flex w-[50px] h-[50px] justify-center items-center text-center rounded-full bg-blue-500">
-                      <span className="text-2xl">2</span>
-                    </span>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-2xl font-bold">Launch Ads</h4>
-                    <p className="text-[16px]">
-                      Next, we launch ads based on the content we've collected.
-                      These ads are strategically designed and placed on popular
-                      social media platforms to capture clients attention.
-                    </p>
-                  </div>
-                </div>
+                <Card heading="Launch Ads " number={2}>
+                  Next, we launch ads based on the content we've collected.
+                  These ads are strategically designed and placed on popular
+                  social media platforms to capture clients attention.
+                </Card>
               </div>
               <div className="basis-[30%] md:mb-8">
-                <div className="flex">
-                  <div>
-                    <span className="flex w-[50px] h-[50px] justify-center items-center text-center rounded-full bg-blue-500">
-                      <span className="text-2xl">3</span>
-                    </span>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-2xl font-bold">Generate Leads</h4>
-                    <p className="text-[16px]">
-                      Finally, we collect information from individuals who are
-                      genuinely interested in your services. Prioritising
-                      quote-ready leads and eliminating tire kickers.
-                    </p>
-                  </div>
-                </div>
+                <Card heading="Generate Leads" number={3}>
+                  Finally, we collect information from individuals who are
+                  genuinely interested in your services. Prioritising
+                  quote-ready leads and eliminating tire kickers.
+                </Card>
               </div>
             </div>
           </div>
