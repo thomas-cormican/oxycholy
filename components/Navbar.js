@@ -14,7 +14,7 @@ function Navbar() {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-md flex px-8 sm:px-0">
+    <div className="z-10 max-w-5xl w-full items-center justify-between text-md flex px-8 sm:px-0">
       <a
         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
         href="https://www.oxycholy.com"
