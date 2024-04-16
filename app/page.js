@@ -24,7 +24,7 @@ export default function Home() {
           <Navbar />
           <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b] md:flex-none to-purple-900 rounded-md flex-auto my-16">
             <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/80">
-              <div className="basis-1/2">
+              <div className="basis-1/2 p-8 md:p-12">
                 <Logo width={450} />
               </div>
               <div className="basis-1/2">
