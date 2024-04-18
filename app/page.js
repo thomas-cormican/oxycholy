@@ -94,8 +94,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="contact" className="w-full bg-slate-700">
-        <div className="flex flex-col items-center max-w-5xl w-full px-12 py-16 m-auto sm:px-4">
+      <div
+        id="contact"
+        className="w-full bg-gradient-to-r from-[#bb1c4b]/50 md:flex-none to-purple-900/50"
+      >
+        <div className="flex flex-col items-center max-w-5xl w-full px-12 py-16 m-auto sm:px-4 ">
           <h2 className="text-5xl mb-8 text-white sm:text-4xl">Contact Us</h2>
           <ContactForm />
         </div>
