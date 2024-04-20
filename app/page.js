@@ -22,8 +22,8 @@ export default function Home() {
         </video>
         <div className="flex flex-col relative justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
           <Navbar />
-          <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b] md:flex-none to-purple-900 rounded-md flex-auto my-16">
-            <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/80">
+          <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b]/60 md:flex-none to-purple-900/60 backdrop-blur-sm rounded-md flex-auto my-16">
+            <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/60">
               <div className="basis-1/2 p-8 md:p-12">
                 <Logo width={450} />
               </div>
