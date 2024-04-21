@@ -1,17 +1,20 @@
 export default {
   title: "Oxycholy - Premier Agency for Top-Tier Leads",
   description:
-    "Welcome to Oxycholy, your premier Hull-based agency specializing in delivering top-tier, quote-ready leads for promising businesses. Our strategic advertising campaigns on popular social media platforms ensure targeted growth, allowing you to focus on your core work while attracting genuinely interested clients.",
+    "Welcome to Oxycholy, your premier Hull-based agency specializing in delivering top-tier, quote-ready leads for promising businesses.",
   keywords:
     "Oxycholy, agency, Hull, top-tier leads, quote-ready leads, strategic advertising, social media, business growth, UK, companies, market, service, estate",
   author: "Oxycholy",
   robots: "index, follow",
   language: "English",
   copyright: "Copyright © 2024 Oxycholy. All rights reserved.",
+  alternates: {
+    canonical: "https://www.oxycholy.com",
+  },
   openGraph: {
     title: "Oxycholy",
     description:
-      "Welcome to Oxycholy, your premier Hull-based agency specializing in delivering top-tier, quote-ready leads for promising businesses. Our strategic advertising campaigns on popular social media platforms ensure targeted growth, allowing you to focus on your core work while attracting genuinely interested clients.",
+      "Welcome to Oxycholy, your premier Hull-based agency specializing in delivering top-tier, quote-ready leads for promising businesses.",
     url: "https://www.oxycholy.com",
     siteName: "Oxycholy",
     images: [
