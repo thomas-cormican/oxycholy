@@ -3,14 +3,14 @@ import ArrowDown from "@/components/ArrowDown";
 import Logo from "@/components/Logo";
 import ContactForm from "@/components/ContactForm";
 import Card from "@/components/Card";
-import { FaTools, FaCheckCircle } from "react-icons/fa";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex bg-black flex-col items-center text-white justify-between text-lg ">
+    <main className="flex bg-[#0b0b0f] flex-col items-center text-white justify-between text-lg">
       <div className="flex flex-col relative justify-between items-center w-full">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -19,16 +19,22 @@ export default function Home() {
         >
           <source src="/bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         <div className="flex flex-col relative justify-between items-center min-h-screen max-w-7xl w-full p-12 sm:p-4">
           <Navbar />
-          <div className="z-10 flex bg-gradient-to-r from-[#bb1c4b]/60 md:flex-none to-purple-900/60 backdrop-blur-sm rounded-md flex-auto my-16">
-            <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm bg-gray-900/60">
-              <div className="basis-1/2 p-8 md:p-12">
+          <div className="z-10 flex  from-[#bb1c4b]/60 md:flex-none to-purple-900/60 backdrop-blur-sm rounded-md flex-auto my-16">
+            <div className="relative flex md:flex-col place-items-center justify-center my-1 backdrop-blur-sm ">
+              <div className="flex flex-col items-center basis-1/2 p-8 md:p-12">
                 <Logo width={450} />
               </div>
-              <div className="basis-1/2">
-                <h2 className="text-2xl pr-16 md:p-4 text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px] md:pb-[30px]">
+              <div className="basis-1/2 flex flex-col items-center">
+                <Image
+                  src="/header-art.svg"
+                  width={400}
+                  height={300}
+                  className="mb-12 md:px-12"
+                />
+                <h2 className="text-2xl pr-16 md:p-4 text-white sm:text-[16px] sm:leading-7 sm:pt-0 sm:pb-[30px] md:pb-[30px] md:text-center">
                   We help businesses with{" "}
                   <span className="text-[#db3969]">hassle-free</span> lead
                   generation, allowing you to focus on what's{" "}
@@ -39,7 +45,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="z-10">
+          <div className="flex flex-col items-center z-10">
+            <p className="text-sm text-gray-300 mb-8 text-center">
+              Using the latest methods and aiming for real results, we help
+              businesses grow in the fast-changing online world.
+            </p>
             <ArrowDown />
           </div>
         </div>
@@ -103,34 +113,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </div>
-      <footer className="flex flex-col items-center w-full p-4 border-t-[1px] bg-black border-t-gray-500 text-center">
-        <div className="flex sm:flex-col gap-8 text-gray-100 py-4">
-          <div className="flex flex-col items-center w-[160px]">
-            <FaTools className="text-[60px]" />
-            <h4 className="text-sm mt-4">Industry Specialists</h4>
-          </div>
-          <div className="flex flex-col items-center w-[160px]">
-            <FaCheckCircle className="text-[60px]" />
-            <h4 className="text-sm mt-4">Guaranteed Results</h4>
-          </div>
-          <div className="flex flex-col items-center w-[160px]">
-            <FaMagnifyingGlass className="text-[60px]" />
-            <h4 className="text-sm mt-4">Qualified Leads</h4>
-          </div>
-        </div>
-        <div className="my-8">
-          <Logo width={300} />
-        </div>
-
-        <p className="text-sm text-gray-500">
-          <a href="https://www.privacypolicies.com/live/8c48d388-85e9-4f33-9e2c-8f8701a286e2">
-            Our Privacy Policy
-          </a>
-        </p>
-        <p className="text-sm text-gray-500">
-          Oxycholy - @2024 All Rights Reserved
-        </p>
-      </footer>
+      <Footer />
     </main>
   );
 }
