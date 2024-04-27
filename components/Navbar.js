@@ -38,13 +38,13 @@ function Navbar() {
         >
           About
         </a>
-        <a
+        {/* <a
           className="cursor-pointer ml-4 sm:ml-2"
           href="/blog"
           rel="noopener noreferrer"
         >
           Blog
-        </a>
+        </a> */}
         <a
           className="ml-4 text-white bg-[#bb1c4b] p-2 rounded-md cursor-pointer sm:ml-2"
           onClick={() => scrollToContact()}
