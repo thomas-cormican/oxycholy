@@ -12,6 +12,6 @@ export function sendEmail(data) {
       return alert(response.message);
     })
     .catch((err) => {
-      return alert(err);
+      return alert("Something went wrong, please try again.");
     });
 }

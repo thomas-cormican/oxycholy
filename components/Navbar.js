@@ -31,10 +31,8 @@ function Navbar() {
       </a>
       <div className="flex w-full items-center justify-end bg-gradient-to-t sm:text-[16px] text-white">
         <a
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-gray-300"
           onClick={() => scrollToAbout()}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           About
         </a>
@@ -46,10 +44,8 @@ function Navbar() {
           Blog
         </a> */}
         <a
-          className="ml-4 text-white bg-[#bb1c4b] p-2 rounded-md cursor-pointer sm:ml-2"
+          className="ml-4 text-white bg-[#bb1c4b] p-2 rounded-md cursor-pointer sm:ml-2 hover:bg-[#881a3b]"
           onClick={() => scrollToContact()}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Contact
         </a>

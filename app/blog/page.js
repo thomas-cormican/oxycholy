@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 function page() {
   return (
-    <div className="flex flex-col items-center text-lg">
+    <div className="flex flex-col items-center bg-[#0b0b0f] text-lg">
       <div className="flex flex-col items-center max-w-7xl w-full p-12 sm:p-4">
         <Navbar />
         <div className="flex items-center">

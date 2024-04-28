@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTools, FaCheckCircle } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 import Logo from "./Logo";
 
 function Footer() {
@@ -22,6 +23,11 @@ function Footer() {
       </div>
       <div className="my-8">
         <Logo width={300} />
+      </div>
+      <div className="flex text-4xl mb-4">
+        <a href="https://www.facebook.com/profile.php?id=61557975647242">
+          <FaFacebookSquare />
+        </a>
       </div>
 
       <p className="text-sm text-gray-500">
